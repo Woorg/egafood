@@ -1,0 +1,59 @@
+.logo
+	position absolute
+	top -146px
+	width 100%
+	height 280px
+	overflow hidden
+	z-index 3
+	&__link
+		position relative
+		left 0
+		margin auto
+		padding 6px
+		size 280px
+		display block
+		border-radius 50%
+		background-color $white
+		background-color rgba(255,255,255,.8)
+
+		&:before
+			position absolute
+			top 100px
+			left 0
+			content ""
+			display block
+			sprite($logo_right)
+		// &:hover
+		// 	.logo__link-w
+		// 		border 0.09375rem solid transparent
+	&__link-w
+		padding-top 18px
+		display block
+		size 269px
+		border 0.09375rem solid #603813
+		border-radius 50%
+		transition border-color .3s ease
+	&__icon
+		margin auto
+		display block
+		sprite($logo)
+		text-indent -9999px
+.slogan
+	position absolute
+	top 100px
+	right 50%
+	margin-right 140px
+	padding-left 9525px
+	width 9999px
+	height 80px
+	background-color $white
+	background-color rgba(255,255,255,.8)
+	&__w
+		padding-top 14px
+	&__text
+		font-iskralght(24px,1)
+		color #603813
+		span
+			margin-top 5px
+			margin-left 160px
+			display inline-block

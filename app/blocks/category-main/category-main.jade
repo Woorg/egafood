@@ -1,0 +1,34 @@
+//- include ../breadcrumbs-category-main/breadcrumbs-category-main
+
+mixin category-main()
+	+b('main').catalog.main
+		+e.in
+
+			+b('h1').title._category._style-1 МЯСО
+
+			+e.items._category-main
+				+e.item._category
+					+e('a').link(href='#')
+						+e('div').image
+							+e('img')(src='assets/images/category/cat_img_1_2x.jpg' alt='category 1')
+						+e('div').info
+							+e('div').info-w._category-main
+								+e.title._category._category-main Баранина
+				+e.item._category
+					+e('a').link(href='#')
+						+e('div').image
+							+e('img')(src='assets/images/category/cat_img_2_2x.jpg' alt='category 2')
+						+e('div').info
+							+e('div').info-w._category-main
+								+e.title._category._category-main Говядина
+				+e.item._category
+					+e('a').link(href='#')
+						+e('div').image
+							+e('img')(src='assets/images/category/cat_img_3_2x.jpg' alt='category 3')
+						+e('div').info
+							+e('div').info-w._category-main
+								+e.title._category._category-main Свинина
+
+
+
+

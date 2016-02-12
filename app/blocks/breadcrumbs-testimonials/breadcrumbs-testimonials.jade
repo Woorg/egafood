@@ -1,0 +1,18 @@
+mixin breadcrumbs-testimonials()
+	+b.breadcrumbs._blog
+		+e.in
+			+e('ul').list(vocab='http://schema.org/', typeof='BreadcrumbList')
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link(property='item', typeof='WebPage', href='https://example.com/Главная')
+						span(property='name') Главная
+					meta(property='position', content='1')
+				| /
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link(property='item', typeof='WebPage', href='https://example.com/Главная/О нас')
+						span(property='name') О нас
+					meta(property='position', content='2')
+				| /
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link._active(property='item', typeof='WebPage', href='https://example.com/Главная/Отзывы/Новости')
+						span(property='name') Отзывы
+					meta(property='position', content='3')

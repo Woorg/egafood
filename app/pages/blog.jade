@@ -1,0 +1,26 @@
+include ../blocks/header/header
+
+include ../blocks/section-menu-inner/section-menu-inner
+include ../blocks/breadcrumbs-blog/breadcrumbs-blog
+
+include ../blocks/section-blog/section-blog
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Egafood - blog';
+
+block content
+	body.page#index
+		.layout
+			+header()
+
+			+section-menu-inner()
+			+breadcrumbs-blog()
+			+section-blog()
+
+			+footer()
+
+		+scripts()

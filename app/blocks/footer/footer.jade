@@ -1,0 +1,56 @@
+//- include ../fork/fork
+
+mixin footer()
+	+b('footer').footer
+		+e.in
+			+b('nav').nav._second
+				+e('ul').list
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') ГЛАВНАЯ
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') О НАС
+							+b('ul').subnav
+								+e('li').item
+									+e('a').link(href='#') отзывы
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') ДОСТАВКА
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') БЛОГ
+							+b('ul').subnav
+								+e('li').item
+									+e('a').link(href='#') новости
+								+e('li').item
+									+e('a').link(href='#') статьи
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') ФОРУМ
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') БАКАЛЕЯ
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') КУЛИНАРИЯ
+							+b('ul').subnav
+								+e('li').item
+									+e('a').link(href='#') готовая <br/>продукция
+								+e('li').item
+									+e('a').link(href='#') полуфабрикаты
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') ПТИЦА
+							+b('ul').subnav
+								+e('li').item
+									+e('a').link(href='#') куры
+								+e('li').item
+									+e('a').link(href='#') индейка
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') МОЛОКО
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') МЯСО
+							+b('ul').subnav
+								+e('li').item
+									+e('a').link(href='#') говядина
+								+e('li').item
+									+e('a').link(href='#') баранина
+								+e('li').item
+									+e('a').link(href='#') свинина
+					+e('li').item
+						+e('a').link._active._style-2(href='#' title='#') ОВОЩИ
+			+e.copyright
+				+e('small') Copyright 2012-2015

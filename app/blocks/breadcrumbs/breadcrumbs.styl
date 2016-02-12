@@ -1,0 +1,34 @@
+.breadcrumbs
+	margin-top 7px
+	// margin-bottom 15px
+	margin-bottom 25px
+	&.breadcrumbs_category-main,
+	&.breadcrumbs_category
+		margin-bottom 15px
+	&__list
+		font-size 0
+		font-iskralght(18px,1)
+		color #3f4b1a
+	&__item
+		margin-left -1px
+		display inline-block
+		vertical-align top
+	&__link
+		margin-right 4px
+		font-iskralght(18px,1)
+		color #3f4b1a
+		text-decoration none
+		&:hover
+			text-decoration underline
+	&__item
+		&:last-child
+			.breadcrumbs__link
+				color #b1b1b1
+				&:hover
+					text-decoration none
+					span
+						color #b1b1b1
+.breadcrumbs__link_active
+	color #b1b1b1
+	&:hover
+		text-decoration none

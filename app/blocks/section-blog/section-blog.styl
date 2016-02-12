@@ -1,0 +1,61 @@
+.main
+	// padding-top 7px
+	padding-bottom  40px
+	&__in
+		clearfix()
+
+	&__content
+		width 850px
+		float left
+	&__button-w
+		margin-top -20px
+		margin-bottom 30px
+		text-align center
+
+.sidebar
+	width 250px
+	float right
+
+.side-block
+	margin-bottom 50px
+	box-shadow 0.15625rem 0.26875rem 6px rgba(0, 0, 0, 0.3)
+	border-radius 17px
+	&__header
+		padding 8px 16px 10px 16px
+		height 41px
+		background-color #90aa3c
+		font-iskrareg(20px,1)
+		border-radius 17px 17px 0 0
+	&__title
+		color $white
+	&__body
+		padding 13px 16px 35px
+		background rgba(255,255,255,.7)
+		font-iskrareg(18px,1)
+		border-radius 0 0 17px 17px
+
+	&__item
+		margin-bottom 18px
+	&__link
+		color #3f4b1a
+		text-decoration none
+		&:hover
+			text-decoration underline
+
+	&_tags
+		.side-block__body
+			padding-bottom 60px
+	// &_comments
+
+
+.tags
+	text-align center
+	&__tag
+		display inline-block
+		vertical-align baseline
+		font-iskrareg(24px,28px)
+		a
+			color #3f4b1a
+			text-decoration none
+			&:hover
+				text-decoration underline

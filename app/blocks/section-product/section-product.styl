@@ -1,0 +1,146 @@
+.product
+	padding-top 7px
+	padding-bottom  70px
+	&__details
+		position relative
+		margin-bottom 36px
+		padding-left 400px
+		color #3f4b1a
+		clearfix()
+	&__image
+		position absolute
+		top 7px
+		left 0
+		padding 4px
+		width 350px
+		height 350px
+		background-color white
+		border-radius 13px
+		box-shadow 0.15625rem 0.26875rem 6px rgba(0, 0, 0, 0.3)
+		img
+			max-width 100%
+			border 1px solid #90aa3c
+			border-radius 12px
+	&__details-row
+		margin-bottom 4px
+		font-size 0
+	&__details-col
+		display inline-block
+		vertical-align top
+		&_first
+			width 357px
+		&_second
+			width 393px
+
+	&__price
+		min-width 350px
+		font-iskrareg(24px,1)
+		color #3f4b1a
+	&__price-val
+		padding-right 16px
+		float left
+		font-gosta(60px,1)
+		color #3f4b1a
+	&__price-curr
+		margin-left 94px
+		margin-bottom 6px
+	&__price-note
+		margin-left 94px
+		font-iskrareg(18px,1)
+	&__details-packing
+		display inline-block
+		width 357px
+		font-iskrareg(24px, 1)
+	&__details-available
+		display inline-block
+		width 393px
+		font-iskrareg(24px, 1)
+	&__details-body
+		padding-top 18px
+		@extend .wysiwyg
+
+.reviews
+	&__title
+		margin-bottom 30px
+	&__list
+		padding-bottom 5px
+.review
+	margin-bottom 23px
+	font-size 0
+	clearfix()
+	&_testimonials
+		margin-bottom 14px
+	&__author,
+	&__left
+		// padding-right 50px
+		display inline-block
+		vertical-align top
+		float left
+		width 350px
+		font-iskrareg(24px,1)
+		text-align right
+	&__author
+		&_testimonials
+			margin-top 0
+			float none
+	&__date
+		font-iskrareg(18px,1)
+	&__subject
+		font-iskrareg(18px,1)
+	&__text
+		display inline-block
+		vertical-align top
+		float right
+		width 750px
+		font-helvlght(17px,22px)
+
+.add-comment
+	padding-top 38px
+	clearfix()
+	&_testimonials
+		padding-top 45px
+	&__message
+		display inline-block
+		vertical-align top
+		float right
+		width 750px
+	&__name
+		display inline-block
+		vertical-align top
+		float left
+		width 350px
+	&__input
+		margin-bottom 14px
+		input
+			border none
+			padding 0 19px
+			size 350px 41px
+			background-color white
+			text-align right
+			letter-spacing 0.03125rem
+			border-radius 13px
+			box-shadow inset 1px 1px 6px rgba(0, 0, 0, 0.3)
+	&__textarea
+		textarea
+			border none
+			padding 13px 14px
+			width 750px
+			min-height 149px
+			letter-spacing 0.0375rem
+			border-radius 13px
+			box-shadow inset 1px 1px 6px rgba(0, 0, 0, 0.3)
+	&__submit
+		float right
+		input
+			padding 6px 29px 12px 35px
+			border none
+			size 236px 41px
+			background  #90aa3c
+			background-image linear-gradient(to top, #3f4b1a 0%, #90aa3c 100%)
+			color white
+			font-iskrareg(23px,1)
+			border-radius 10px
+			transition background .3 ease
+			&:hover
+				background-color #3f4b1a
+				background-image none

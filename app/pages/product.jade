@@ -1,0 +1,26 @@
+include ../blocks/header/header
+
+include ../blocks/section-menu-inner/section-menu-inner
+include ../blocks/breadcrumbs/breadcrumbs
+
+include ../blocks/section-product/section-product
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Egafood - product';
+
+block content
+	body.page#index
+		.layout
+			+header()
+
+			+section-menu-inner()
+			+breadcrumbs()
+			+section-product()
+
+			+footer()
+
+		+scripts()

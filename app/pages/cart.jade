@@ -1,0 +1,23 @@
+include ../blocks/header/header
+
+include ../blocks/section-menu-inner/section-menu-inner
+include ../blocks/section-cart/section-cart
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Egafood - корзина товаров';
+
+block content
+	body.page#index
+		.layout
+			+header()
+
+			+section-menu-inner()
+			+section-cart()
+
+			+footer()
+
+		+scripts()

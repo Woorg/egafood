@@ -1,0 +1,50 @@
+include ../blocks/header/header
+
+include ../blocks/hero/hero
+include ../blocks/section-menu/section-menu
+include ../blocks/breadcrumbs-maket/breadcrumbs-maket
+
+
+include ../blocks/section-maket/section-maket
+
+//- include ../blocks/section-recommend/section-recommend
+include ../blocks/section-feedback-maket/section-feedback-maket
+include ../blocks/section-news-maket/section-news-maket
+include ../blocks/section-articles-maket/section-articles-maket
+//- include ../blocks/section-forum/section-forum
+include ../blocks/review/review
+include ../blocks/add-comment/add-comment
+include ../blocks/wysiwyg/wysiwyg
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Egafood - макет';
+
+block content
+	body.page#index
+		.layout
+			+header()
+			+b.main._maket
+				+hero()
+				+section-menu()
+				+breadcrumbs-maket()
+				+section-maket()
+				+section-feedback-maket()
+				+section-news-maket()
+				+section-articles-maket()
+				+b.section_blank
+					+e.in
+						+review()
+				+b.section_blank
+					+e.in
+						+add-comment()
+				+wysiwyg()
+
+				//- +section-forum()
+
+			+footer()
+
+		+scripts()

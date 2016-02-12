@@ -1,0 +1,141 @@
+//- include ../breadcrumbs-maket/breadcrumbs-maket
+
+mixin section-maket()
+	+b.section
+		+e.in
+			//- +breadcrumbs-maket
+
+
+			+b('h2').title._style-1._maket ЗАГОЛОВОК H2
+
+
+			+b.catalog
+				+e.item._grid
+					+e('div').image
+						+e('a').link(href='#')
+							+e('img')(src='assets/images/category/cat_img_4_2x.jpg' alt='category 1')
+					+e('div').info
+						+e('div').info-w
+							+e('div').info-top
+								+e('div').title
+									+e('a').link(href='#') Говяжий край филе (задн. ч.)
+								+e('div').text
+									+e('a').link(href='#') Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила
+								+e('div').price
+									+e('div').price-val 780
+									+e('div').price-text рублей
+									+e('div').price-text за 100 г
+							+e('div').info-bottom
+								+b('div').quant
+									+e('span').button._minus -
+									+e('input').input(value='1' name='')
+									+e('span').button._plus +
+								+b('button').button._buy
+									+e('span') Купить
+				+e.item._not-available._grid
+						+e('div').image
+							+e('a').link(href='#')
+								+e('img')(src='assets/images/category/cat_img_4_2x.jpg' alt='category 3')
+						+e('div').info
+							+e('div').info-w
+								+e('div').info-top
+									+e('div').title
+										+e('a').link(href='#') Говяжий край филе (задн. ч.)
+									+e('div').text
+										+e('a').link(href='#') Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила
+									+e('div').price
+										+e('div').price-val 780
+										+e('div').price-text рублей
+										+e('div').price-text за 100 г
+								+e('div').info-bottom
+									+b('div').quant
+										+e('span').button._minus -
+										+e('input').input(value='1' name='')
+										+e('span').button._plus +
+									+e.not-available нет в наличие
+									+e.not-available._list нет <br/>в наличие
+									+b('button').button._buy(disabled)
+										+e('span') Купить
+				+e.item._category
+					+e('a').link(href='#')
+						+e('div').image
+							+e('img')(src='assets/images/category/cat_img_2_2x.jpg' alt='category 2')
+						+e('div').info
+							+e('div').info-w
+								+e.title._category Говядина
+
+			+b.product
+				+b('h1').title._style-3._product Заголовок H1
+				+e.details
+					+e.image
+						+e('a')(href="assets/images/product/product_img_1_2x.jpg")
+							+e('img')(src='assets/images/product/product_img_1.jpg' alt='image')
+					+e.details-top
+						+e.details-row
+							+e.details-col._first
+								+e.price
+									+e.price-val 780
+									+e.price-curr рублей
+									+e.price-note цена указана за 100 г
+							+e.details-col._second
+								+b('div').quant._product
+									+e('span').button._minus._big -
+									+e('input').input._big(value='1' name='')
+									+e('span').button._plus._big +
+								+b('a').button._prod-buy(href='#') Купить
+
+								+b('a').favorite._product(href='#') Добавить в избранное
+						+e.details-row
+							+e.details-packing Фасовка: 0,7 кг
+							+e.details-available В наличии: 13 шт
+					+e.details-body
+						p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
+						p Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного
+
+			+b.catalog
+				+e.item._list
+					+e('div').image
+						+e('a').link(href='#')
+							+e('img')(src='assets/images/category/cat_img_4_2x.jpg' alt='category 1')
+					+e('div').info
+						+e('div').info-w
+							+e('div').info-top
+								+e('div').title
+									+e('a').link(href='#') Говяжий край филе (задн. ч.)
+								+e('div').text
+									+e('a').link(href='#') Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила
+								+e('div').price
+									+e('div').price-val 780
+									+e('div').price-text рублей
+									+e('div').price-text за 100 г
+							+e('div').info-bottom
+								+b('div').quant
+									+e('span').button._minus -
+									+e('input').input(value='1' name='')
+									+e('span').button._plus +
+								+b('button').button._buy
+									+e('span') Купить
+				+e.item._not-available._list
+						+e('div').image
+							+e('a').link(href='#')
+								+e('img')(src='assets/images/category/cat_img_4_2x.jpg' alt='category 3')
+						+e('div').info
+							+e('div').info-w
+								+e('div').info-top
+									+e('div').title
+										+e('a').link(href='#') Говяжий край филе (задн. ч.)
+									+e('div').text
+										+e('a').link(href='#') Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила
+									+e('div').price
+										+e('div').price-val 780
+										+e('div').price-text рублей
+										+e('div').price-text за 100 г
+								+e('div').info-bottom
+									+b('div').quant
+										+e('span').button._minus -
+										+e('input').input(value='1' name='')
+										+e('span').button._plus +
+									+e.not-available нет в наличие
+									+e.not-available._list нет <br/>в наличие
+									+b('button').button._buy(disabled)
+										+e('span') Купить

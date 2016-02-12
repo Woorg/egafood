@@ -1,0 +1,206 @@
+.catalog
+	padding-top 7px
+	padding-bottom  40px
+	// min-height 671px
+	&__items
+		margin-left -25px
+		margin-right -25px
+		font-size 0
+		overflow hidden
+		clearfix()
+	&__item
+		position relative
+		margin-left 25px
+		margin-right 25px
+		margin-bottom 50px
+		padding 4px 5px
+		display inline-block
+		vertical-align top
+		background-color white
+		color #3f4b1a
+		border-radius 13px
+		box-shadow 0.15625rem 0.26875rem 6px rgba(0, 0, 0, 0.3)
+		// border 1px solid #90aa3c
+		clearfix()
+		&_grid
+			width 250px
+			min-height 333px
+		&_list
+			width 1150px
+			min-height 1px
+	&__link
+		// display inline-block
+		// border-bottom 1px solid transparent
+		text-decoration none
+		color #3f4b1a
+		// transition all .2s ease
+		&:hover
+			text-decoration underline
+			// border-bottom 1px solid #3f4b1a
+	&__image
+		width 240px
+		height 325px
+		border 1px solid #90aa3c
+		border-radius 10px
+		float left
+		overflow hidden
+		img
+			max-width 100%
+			display block
+			border-radius 10px
+			// transition all .2s ease
+	&__info
+		position absolute
+		bottom 0
+		right 0
+		left 0
+		padding 2px 10px
+		min-height 60px
+		background rgba(255,255,255,.9)
+		border-radius 0 0 10px 10px
+		z-index 1
+	&__text
+		display none
+
+
+	.catalog__title_category
+		font-iskrareg(24px,1)
+
+.catalog__item_category
+	.catalog__info-w
+		padding-left 10px
+		padding-right 10px
+		min-height 60px
+.catalog__item_list
+	margin-bottom 42px
+	padding 0
+	height auto
+	background transparent
+	border 1px solid transparent
+	box-shadow 0rem 0rem 0 rgba(0, 0, 0, 0.3)
+	border-radius 0
+	// .catalog__link
+		// border 1px solid transparent
+	.catalog__image
+		padding 4px 4px 4px
+		size 191px
+		background #FFF
+		overflow hidden
+		box-shadow 0.15625rem 0.26875rem 6px rgba(0, 0, 0, 0.3)
+		border none
+		border-radius 14px
+		img
+			border 1px solid #90aa3c
+			width 100%
+			height 183px
+			border-radius 10px
+	.catalog__info
+		position relative
+		bottom auto
+		left auto
+		right auto
+		padding 0
+		width 910px
+		float right
+		background transparent
+		clearfix()
+	.catalog__info-w
+		position static
+		background transparent
+		border-radius 0
+	.catalog__info-top
+		padding 0
+		height auto
+	.catalog__title
+		margin-right 240px
+		margin-bottom 18px
+		max-width 100%
+		font-size 24px
+	.catalog__text
+		margin-right 240px
+		height 150px
+		display block
+		font-helvlght(17px,22px)
+		color #3f4b1a
+		.catalog__link
+			display inline-block
+			text-decoration none
+	.catalog__price
+		right 0
+		color #3f4b1a
+	.catalog__price-val
+		margin-bottom 10px
+		font-size 48px
+		color #3f4b1a
+	.catalog__price-text
+		font-size 18px
+	.catalog__info-bottom
+		position absolute
+		right 0
+		bottom 0
+		width 240px
+		height 100%
+		.quant
+			position absolute
+			top auto
+			bottom 48px
+			margin-left 74px
+		.quant__input
+			padding-bottom 5px
+		.quant__button
+			margin-bottom 4px
+			vertical-align bottom
+	.button_buy
+		width 100%
+		border-radius 10px
+
+.catalog__item_not-available
+	.quant__button
+		background #4b4b4b
+		background-image linear-gradient(to top, #4b4b4b 0%, #ccc 100%)
+		transition all .2s ease
+		&:hover
+			background-color #89898a
+			background-image none
+	.button_buy
+		background #4b4b4b
+		background-image linear-gradient(to top, #4b4b4b 0%, #ccc 100%)
+		transition all .2s ease
+		&:hover
+			background-color #89898a
+			background-image none
+
+
+.catalog__item_grid.catalog__item_not-available
+	.catalog__info
+		top 5px
+		left 6px
+		right 6px
+		bottom 5px
+		background rgba(255,255,255,.9)
+		border-radius 10px
+	.catalog__not-available
+		position absolute
+		left 0
+		bottom 197px
+		width 100%
+		display block
+		font-iskrareg(18px,1)
+		color #c00000
+		text-align center
+		z-index 1
+	.catalog__not-available_list
+		display none
+
+.catalog__item_list
+	.catalog__not-available
+		display none
+	.catalog__not-available_list
+		display block
+		font-iskrareg(18px,1)
+		color #c00000
+
+
+
+
+

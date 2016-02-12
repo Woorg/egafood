@@ -1,0 +1,442 @@
+body
+	min-width 1180px
+	background-color #e8edd9
+	// background #e8edd9 url('../images/pattern-1-bg.jpg') 0 0 repeat
+	font-family "helveticaneuecyrlight", Helvetica, Arial, sans-serif
+	color #3f4b1a
+	// +retina()
+
+
+//Placeholder
+::-webkit-input-placeholder
+	color #9b9b9b
+
+:-moz-placeholder  /* Firefox 18- */
+	color #9b9b9b
+
+::-moz-placeholder   /* Firefox 19+ */
+	color #9b9b9b
+
+:-ms-input-placeholder
+	color #9b9b9b
+
+
+.layout
+	overflow hidden
+	background url('../images/pattern-1-bg.png') 0 0 repeat
+
+
+.in
+	margin auto
+	padding-left 15px
+	padding-right 15px
+	width 1180px
+
+
+// Container
+.header,
+.section,
+.footer,
+.product,
+.main,
+.catalog,
+.breadcrumbs
+	&__in
+		@extend .in
+
+
+// Nav
+.nav
+	&__list
+		clearfix()
+	&__item
+		margin-right 23px
+		margin-bottom 10px
+		float left
+		&:last-child
+			margin-right 0
+	&__link
+		font-iskralght(24px,1)
+		color $white
+		text-transform uppercase
+		text-decoration none
+		transition color .2s ease
+		&_active,
+		&:hover,
+		&:active
+			color $gray
+		&_style-2
+			font-iskralght(22px,1)
+			color $white
+			&:hover
+				color $white
+				text-decoration underline
+	&_main
+		margin-top 2px
+		max-width 530px
+		float left
+	&_second
+		margin-left 0
+		margin-bottom 14px
+		min-height 140px
+		.nav__list
+			display table
+		.nav__item
+			display table-cell
+			margin-right 20px
+			letter-spacing -0.00625rem
+			&:last-child
+				margin-right 0
+
+// Subnav
+.subnav
+	padding-top 4px
+	&__item
+		margin-bottom 1px
+	&__link
+		font-iskralght(18px,21px)
+		color $white
+		text-decoration none
+		&:hover
+			text-decoration underline
+
+
+
+// Buttons
+.button
+	display inline-block
+	transition all .2s ease
+	&_basket
+		border 1px solid $white
+		margin-top 8px
+		padding 3px 7px 5px 5px
+		float right
+		font-iskralght(18px,1)
+		color $white
+		text-decoration none
+		border-radius 7px
+		transition all .2s ease
+		&:hover
+			background-color $white
+			color #000
+	&_buy
+		position absolute
+		right -1px
+		bottom -2px
+		padding 2px 10px 8px 9px
+		height 39px
+		background #3f4b1a
+		background-image linear-gradient(to top, #3f4b1a 0%, #90aa3c 100%)
+		font-iskrareg(22px,1)
+		color $white
+		border none
+		border-radius 10px 0
+		transition all .2s ease
+		span
+			display inline-block
+		&:hover
+			background-color #677a2b
+			background-image none
+
+	&_delete
+		position relative
+		margin-top 6px
+		size 20px
+		background #870000
+		font-magreg(23px,1)
+		color $white
+		background-image linear-gradient(to top, #870000 0%, #c00000 100%)
+		border-radius 7px
+		text-indent -9999px
+		text-decoration none
+		transition all .2s ease
+		&:hover
+			background #870000
+		&:after
+			position absolute
+			top 0
+			left 0
+			content "X"
+			width 100%
+			height 100%
+			font-magreg(13px,20px)
+			color $white
+			text-indent 0
+			text-align center
+
+	&_checkout
+		padding 7px 32px 10px 40px
+		float right
+		background #3f4b1a
+		background-image linear-gradient(to top, #3f4b1a 0%, #90aa3c 100%)
+		font-iskrareg(22px,1)
+		color $white
+		text-decoration none
+		border-radius 10px
+		&:hover
+			background-image none
+			background-color #3f4b1a
+	&_prod-buy
+		margin-top 8px
+		padding 4px 55px 11px 60px
+		height 41px
+		background #3f4b1a
+		background-image linear-gradient(to top, #3f4b1a 0%, #90aa3c 100%)
+		font-iskrareg(24px,1)
+		color $white
+		border-radius 10px
+		text-decoration none
+		&:hover
+			background-color #3f4b1a
+			background-image none
+	&_default
+		padding 9px 47px 10px 54px
+		height 41px
+		// border-bottom 1px solid transparent
+		background #3F4B1A
+		background-image linear-gradient(to top, #3f4b1a 0%, #90aa3c 100%)
+		font-iskrareg(22px,1)
+		color $white
+		border-radius 10px
+		text-decoration none
+		&:hover
+			background #3f4b1a
+			background-image none
+
+// Sections
+.section
+	position relative
+	&_style-1
+		background #90aa3c url('../images/section_bg_1.jpg') 0 0 repeat
+		&:before,
+		&:after
+			position absolute
+			left 0
+			content ''
+			width 100%
+			z-index 2
+		&:before
+			top -5px
+			height 5px
+			background url("../images/section_1_top.png") repeat-x
+		&:after
+			bottom -6px
+			height 7px
+			background url("../images/section_1_bottom.png") repeat-x
+	// &_style-2
+	// 	background url('../images/section_bg_2.jpg') 0 0 repeat
+	&_blank
+		margin-top 60px
+		margin-bottom 60px
+
+// Article
+.article
+	margin-left 45px
+	padding 6px 15px 9px 16px
+	background-color $white
+	background-color rgba(255,255,255,.7)
+	border-radius 17px
+	box-shadow 0.15625rem 0.26875rem 6px rgba(0, 0, 0, 0.3)
+	clearfix()
+	&_full
+		margin-left 0
+		margin-bottom 50px
+		padding-bottom 41px
+	&_half
+		display inline-block
+		vertical-align top
+		width 550px
+		min-height 315px
+	&_third
+		padding-top 12px
+		display inline-block
+		vertical-align top
+		width 350px
+		min-height 315px
+	&:first-child
+		margin-left 0
+	&__title
+		margin-bottom 32px
+		font-iskrareg(24px,26px)
+		color #3f4b1a
+		letter-spacing -0.01875rem
+		&_forum
+			margin-bottom 7px
+			line-height 23px
+		&_blog
+			margin-bottom 15px
+			letter-spacing -0.00625rem
+	&__link
+		text-decoration none
+		color #3f4b1a
+		&:hover
+			text-decoration underline
+	&__image
+		width 230px
+		height 230px
+		display inline
+		overflow hidden
+		border-radius 7px
+		&_left
+			margin-top 2px
+			float left
+		&_blog
+			margin-top 5px
+			size 235px
+			img
+				max-width 100%
+				height 100%
+	&__content
+		margin-left 245px
+		&_full
+			margin-left 0
+		&_blog
+			margin-left 285px
+	&__info
+		margin-bottom 7px
+		font-iskralght(14px,1)
+		color #90aa3c
+		overflow hidden
+		&_blog
+			margin-bottom 11px
+			font-iskralght(18px,1)
+	&__date
+		height auto
+		float left
+	&__comm-count
+		float right
+	&__text
+		color #3f4b1a
+		font-helvlght(17px,22px)
+		clear right
+
+//  Title
+.title
+	margin-left 0
+	font-gosta(48px,51px)
+	text-transform uppercase
+	&_style-1
+		color #3f4b1a
+		text-align center
+	&_style-2
+		color $white
+		text-align center
+	&_style-3
+		margin-left 0
+		font-iskrareg(36px,1)
+		color #3f4b1a
+		text-align left
+		text-transform none
+	&_recommend
+		margin-bottom 20px
+	&_feedback
+		margin-bottom 27px
+	&_news
+		margin-bottom 20px
+	&_articles
+		margin-bottom 19px
+	&_forum
+		margin-bottom 20px
+	&_cart
+		margin-bottom 27px
+	&_product
+		margin-bottom 20px
+	&_reviews
+		margin-bottom 14px
+	&_category
+		margin-bottom 20px
+	&_blog
+		margin-bottom 28px
+	&_testimonials
+		margin-top 35px
+		margin-bottom 15px
+	&_maket
+		margin-bottom 30px
+// Spinner
+.quant
+	font-size 0
+	user-select none
+	&_recommend
+		margin-top 5px
+		margin-left 36px
+		float left
+	&_cart
+		position relative
+		top 0
+		margin-top 6px
+		margin-left 3px
+		margin-bottom 1px
+	&_product
+		margin-top 7px
+		margin-right 24px
+		margin-left 3px
+		float left
+	&__input
+		border none
+		padding-top 0
+		padding-bottom 5px
+		size 30px
+		background-color $white
+		font-iskrareg(22px,1)
+		color #3f4b1a
+		text-align center
+		border-radius 10px
+		box-shadow inset 1px 1px 6px rgba(0, 0, 0, 0.3)
+		&_big
+			size 41px
+			border-radius 13px
+	.ui-spinner-button
+		display none
+	&__button
+		display inline-block
+		size 20px
+		background #3f4b1a
+		background-image linear-gradient(to top, #3f4b1a 0%, #90aa3c 100%)
+		font-magreg(23px,20px)
+		color $white
+		text-align center
+		border-radius 7px
+		cursor pointer
+		vertical-align top
+		transition all .2s ease
+		&_minus
+			margin-top 5px
+			margin-right 6px
+		&_plus
+			margin-top 5px
+			margin-left 6px
+		&_big
+			margin-top 8px
+			size 25px
+			line-height 25px
+			border-radius 10px
+		&:hover
+			background-color #677a2b
+			background-image none
+
+
+// Favorites
+
+.favorite
+	margin-top 4px
+	display inline-block
+	sprite($star)
+	text-indent -9999px
+	+retina()
+		sprite2($star_2x)
+	&_product
+		float right
+	&_active
+		sprite($star_active)
+		+retina()
+			sprite2($star_active_2x)
+
+
+
+.wysiwyg
+	font-helvlght(17px, 22px)
+	color #3f4b1a
+	p
+		margin-bottom 10px
+	img
+		display block

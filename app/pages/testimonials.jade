@@ -1,0 +1,25 @@
+include ../blocks/header/header
+
+include ../blocks/section-menu-inner/section-menu-inner
+include ../blocks/breadcrumbs-testimonials/breadcrumbs-testimonials
+include ../blocks/section-testimonials/section-testimonials
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Egafood - testimonials';
+
+block content
+	body.page#index
+		.layout
+			+header()
+
+			+section-menu-inner()
+			+breadcrumbs-testimonials()
+			+section-testimonials()
+
+			+footer()
+
+		+scripts()

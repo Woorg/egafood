@@ -1,0 +1,27 @@
+include ../blocks/header/header
+
+include ../blocks/section-menu-inner/section-menu-inner
+include ../blocks/breadcrumbs-category-main/breadcrumbs-category-main
+
+include ../blocks/category-main/category-main
+
+include ../blocks/footer/footer
+
+extends ../blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Egafood - category main';
+
+block content
+	body.page#index
+		.layout
+			+header()
+
+			+section-menu-inner()
+			+breadcrumbs-category-main()
+
+			+category-main()
+
+			+footer()
+
+		+scripts()

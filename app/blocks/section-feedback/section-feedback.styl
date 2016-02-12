@@ -1,0 +1,98 @@
+.section
+	&_feedback
+		padding-top 40px
+		padding-bottom 50px
+		background #90aa3c url('../images/section_bg_1.jpg') 0 0 repeat
+		// overflow hidden
+		.section__in
+			position relative
+	// &__w
+		// background transparent url('../images/pattern-2-bg.png') 0 0 repeat
+	&__list
+		margin-right -10px
+		font-size 0
+	&__item
+		position relative
+		display inline-block
+		vertical-align top
+		margin-left 40px
+		padding 10px 15px 16px 17px
+		width 260px
+		height 306px
+		background url('../images/feedback_bg.png') 0 0 repeat
+		background-size contain
+		// box-shadow 0.15625rem 0.26875rem 6px rgba(0, 0, 0, 0.3)
+		&:first-child
+			margin-left 0
+		// &:before
+		// 	position absolute
+		// 	top -30px
+		// 	left -6px
+		// 	content ""
+		// 	width 257px
+		// 	height 31px
+		// 	background url('../images/feedback_top.png') 0 0 no-repeat
+		// 	background-size contain
+			// sprite($feedback_top_05x)
+			// +retina()
+			// 	sprite2($feedback_top)
+
+			&_1
+				margin-top 0px
+				padding-top 42px
+				min-height 264px
+				transform rotate(-1deg)
+				.section__item-title
+					margin-bottom 5px
+			&_2
+				margin-top 8px
+				padding-top 44px
+				transform rotate(1deg)
+			&_3
+				margin-top -4px
+				padding-top 42px
+				transform rotate(2deg)
+			&_4
+				margin-top 17px
+				padding-top 44px
+				transform rotate(-3deg)
+		&__item-title
+			margin-bottom 4px
+			font-typereg(18px,21px)
+			color #4a2b0f
+		&__item-text
+			font-typelght(18px,21px)
+			color #4a2b0f
+
+.section__feedback-icon-left
+	position absolute
+	top 143px
+	left -354px
+	width 200px
+	height 196px
+	opacity 0
+	transition opacity .3s ease
+	+hd()
+		opacity 1
+		background url('../images/feedback_left.png') no-repeat
+		background-size contain
+		+retina()
+			background url('../images/feedback_left_2x.png') no-repeat
+			background-size contain
+
+.section__feedback-icon-right
+	position absolute
+	top 140px
+	right -350px
+	width 200px
+	height 196px
+	opacity 0
+	transition opacity .3s ease
+	+hd()
+		opacity 1
+		background url('../images/feedback_right.png') no-repeat
+		background-size contain
+		+retina()
+			background url('../images/feedback_right_2x.png') no-repeat
+			background-size contain
+

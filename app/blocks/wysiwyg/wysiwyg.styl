@@ -1,0 +1,83 @@
+.row
+	margin-right -15px
+	margin-left -15px
+	clearfix()
+	&_fs0
+		font-size 0
+	&_mb60
+		margin-bottom 60px
+	p
+		margin-bottom 20px
+		font-helvlght(17px,22px)
+		color #3f4b1a
+	// h2
+		// margin-bottom 30px
+.coll
+	display inline-block
+	margin-left 15px
+	margin-right 15px
+	width 560px
+	&__title
+		margin-bottom 20px
+		font-iskrareg(24px,1)
+		color #3f4b1a
+
+.list
+	margin-left 11px
+	font-helvlght(17px,22px)
+	color #3f4b1a
+	&_unordered
+		list-style-type disc
+
+	&_ordered
+		list-style-type decimal
+
+.important
+	margin-left 35px
+	margin-right 250px
+	margin-bottom 30px
+	padding 16px 15px
+	background-color rgba(255,255,255,.4)
+	border-radius 10px
+	box-shadow 0.09375rem 0.1625rem 4px rgba(0, 0, 0, 0.2)
+	&__title
+		margin-bottom 7px
+		font-iskrareg(24px,1)
+		font-style italic
+	&__text
+		font-iskralght(17px,22px)
+		font-style italic
+
+.blockquote
+	position relative
+	margin-left 152px
+	margin-right 250px
+	border-left 3px solid #90aa3c
+	background-color $white
+	background-color rgba(255,255,255,.4)
+	border-radius 0 10px 10px 0
+	box-shadow 0.09375rem 0.1625rem 4px rgba(0, 0, 0, 0.2)
+	&:before
+		position absolute
+		top 19px
+		left -94px
+		content ""
+		sprite($blockquote)
+		+retina()
+			sprite2($blockquote_2x)
+	p
+		padding 14px 24px 15px 23px
+		font-helvlght(17px,22px)
+		font-style italic
+
+.img
+	border-radius 13px
+	box-shadow 0.09375rem 0.1625rem 4px rgba(18, 17, 12, 0.2)
+	&_left
+		margin-right 25px
+		margin-bottom 23px
+		float left
+	img
+		display block
+		border-radius 13px
+		max-width 100%

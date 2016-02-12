@@ -1,0 +1,28 @@
+mixin section-articles()
+	+b('section').section._articles._style-1
+		+e.in
+			+b('h2').title._style-2._articles СТАТЬИ
+			+e.articles._grid
+				+b('article').article._half
+					+e('h3').title
+						+e('a').link(href='#') Ваш выбор молока
+					+e.image._left
+						+e('img')(src='assets/images/articles/article_img_1.jpg' alt='image')
+					+e.content
+						+e.info
+							+e('time').date(datetime='17.05.2015') 17.05.2015
+							+e.comm-count комментарии (36)
+						+e.text Пожалуй, молоко – это следующее после воды фундаментальное для человека вещество. Ничего удивительного, если вспомнить, что оно входит в определение нашего класса «млекопитающие, основной отличительной особенностью которых является вскармливание детёнышей молоком»...
+
+				+b('article').article._half
+					+e('h3').title
+						+e('a').link(href='#') Ваш выбор молока
+					+e.image._left
+						+e('img')(src='assets/images/articles/article_img_1.jpg' alt='image')
+					+e.content
+						+e.info
+							+e('time').date(datetime='17.05.2015') 17.05.2015
+							+e.comm-count комментарии (36)
+						+e.text Пожалуй, молоко – это следующее после воды фундаментальное для человека вещество. Ничего удивительного, если вспомнить, что оно входит в определение нашего класса «млекопитающие, основной отличительной особенностью которых является вскармливание детёнышей молоком»...
+			+e.articles-icon-left
+			+e.articles-icon-right

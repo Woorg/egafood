@@ -1,0 +1,12 @@
+mixin add-comment()
+
+	+b.add-comment
+		+e('form')(action='' method='post' name='')
+			+e.message
+				+e.textarea
+					+e('textarea')(placeholder='Напишите нам' name='')
+			+e.name
+				+e.input
+					+e('input')(type='text' placeholder='Имя, отображаемое в отзыве' value='' name='')
+				+e.submit
+					+e('input')(type='submit' value='Отправить отзыв' name='')

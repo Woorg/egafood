@@ -1,0 +1,61 @@
+include ../icon/icon
+
+mixin header()
+	+b('header').header
+		+e.in
+			+b('nav').nav._main
+				+e('ul').list
+					+e('li').item
+						+e('a').link._active(href='#' title='ГЛАВНАЯ') ГЛАВНАЯ
+					+e('li').item
+						+e('a').link.style-1(href='#' title=' О НАС') О НАС
+					+e('li').item
+						+e('a').link.style-1(href='#' title='ДОСТАВКА') ДОСТАВКА
+					+e('li').item
+						+e('a').link.style-1(href='#' title='БЛОГ') БЛОГ
+					+e('li').item
+						+e('a').link.style-1(href='#' title='ФОРУМ') ФОРУМ
+			+e.controls
+				+b.basket
+					+e('a').link(href='#') Корзина
+					+e('div').dropdown
+						+e('ul').list
+							+e('li').item
+								+e.item-title Говяжий край филе (задн. ч.)
+								+e.item-quant х2
+								+e.item-price 1560 руб.
+							+e('li').item
+								+e.item-title Говяжий край филе (задн. ч.)
+								+e.item-quant х2
+								+e.item-price 1560 руб.
+							+e('li').item
+								+e.item-title Говяжий край филе (задн. ч.)
+								+e.item-quant х2
+								+e.item-price 1560 руб.
+						+e.bottom
+							+e.row
+								+e.row-i._title Сумма:
+								+e.row-i._val 4680 руб.
+							+e.row
+								+e.row-i._title Доставка по городу (Вес: 0.00кг):
+								+e.row-i._val 300 руб.
+							+e.row
+								+e.row-i._title Итого:
+								+e.row-i._val 4980 руб.
+							+b('a').button._basket(href='#') Оформить заказ
+
+				+e.auth
+					+e('a').auth-link(href='#') Войти
+					+e('span').sep /
+					+e('a').auth-link(href='#') личный кабинет
+
+			+b.search
+				+e('form')(action='' method='get')
+					+e.input
+						+e('input')(type='text' value='' placeholder='поиск')
+					+e('button').submit
+						+e.submit-icon
+
+
+
+

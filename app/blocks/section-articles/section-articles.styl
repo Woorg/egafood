@@ -1,0 +1,35 @@
+.section
+	&_articles
+		padding-top 40px
+		padding-bottom 60px
+		.section__in
+			position relative
+
+.section__articles-icon-left
+	position absolute
+	top 140px
+	left -354px
+	size 200px
+	opacity 0
+	transition opacity .3s ease
+	+hd()
+		opacity 1
+		background url('../images/articles_icon_left.png')
+		background-size contain
+		+retina()
+			background url('../images/articles_icon_left_2x.png')
+			background-size contain
+.section__articles-icon-right
+	position absolute
+	top 140px
+	right -346px
+	size 200px
+	opacity 0
+	transition opacity .3s ease
+	+hd()
+		opacity 1
+		background url('../images/articles_icon_right.png')
+		background-size contain
+		+retina()
+			background url('../images/articles_icon_right_2x.png')
+			background-size contain

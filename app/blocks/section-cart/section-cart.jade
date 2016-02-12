@@ -1,0 +1,199 @@
+mixin section-cart()
+	+b('section').section._cart._style-2
+		+e.in
+			+b('h1').title._style-3._cart Корзина товаров
+
+			+b.cart-table
+				+e.header
+					+e.cell._title Наименование товара
+					+e.cell._id Артикул
+					+e.cell._quant Кол-во
+					+e.cell._price Цена
+					+e.cell._amount Сумма
+					+e.cell._delete Уд.
+				+e.body
+					+e.row
+						+e.cell._title
+							+e('a')(href='#') Говяжий край филе (задн. ч.)
+						+e.cell._id 404
+						+e.cell._quant
+							+b('div').quant._cart
+								+e('span').button._minus -
+								+e('input').input(value='1' name='')
+								+e('span').button._plus +
+						+e.cell._price 780 руб.
+						+e.cell._amount 780 руб.
+						+e.cell._delete
+							+b('a').button._delete(href='#') Удалить
+					+e.row
+						+e.cell._title
+							+e('a')(href='#') Говяжий край филе (задн. ч.)
+						+e.cell._id 404
+						+e.cell._quant
+							+b('div').quant._cart
+								+e('span').button._minus -
+								+e('input').input(value='1' name='')
+								+e('span').button._plus +
+						+e.cell._price 780 руб.
+						+e.cell._amount 780 руб.
+						+e.cell._delete
+							+b('a').button._delete(href='#') Удалить
+					+e.row
+						+e.cell._title
+							+e('a')(href='#') Говяжий край филе (задн. ч.)
+						+e.cell._id 404
+						+e.cell._quant
+							+b('div').quant._cart
+								+e('span').button._minus -
+								+e('input').input(value='1' name='')
+								+e('span').button._plus +
+						+e.cell._price 780 руб.
+						+e.cell._amount 780 руб.
+						+e.cell._delete
+							+b('a').button._delete(href='#') Удалить
+					+e.row
+						+e.cell._title
+							+e('a')(href='#') Говяжий край филе (задн. ч.)
+						+e.cell._id 404
+						+e.cell._quant
+							+b('div').quant._cart
+								+e('span').button._minus -
+								+e('input').input(value='1' name='')
+								+e('span').button._plus +
+						+e.cell._price 780 руб.
+						+e.cell._amount 780 руб.
+						+e.cell._delete
+							+b('a').button._delete(href='#') Удалить
+					+e.row
+						+e.cell._title
+							+e('a')(href='#') Говяжий край филе (задн. ч.)
+						+e.cell._id 404
+						+e.cell._quant
+							+b('div').quant._cart
+								+e('span').button._minus -
+								+e('input').input(value='1' name='')
+								+e('span').button._plus +
+						+e.cell._price 780 руб.
+						+e.cell._amount 780 руб.
+						+e.cell._delete
+							+b('a').button._delete(href='#') Удалить
+				+b.summary
+					+e.w
+						+e.row
+							+e.item._title Сумма:
+							+e.item._val 3900 руб
+						+e.row
+							+e.item._title Доставка:
+							+e.item._val 300 руб.
+						+e.row
+							+e.item._title Итого:
+							+e.item._val 780 руб.
+
+
+
+			+e('form')(action='' method='post' name='')
+				+e.row
+					+b.cart-item._client._half
+						+e.header
+							+e('h2').title Покупатель
+						+e.body
+								+e.row
+									+e.i._title
+										+e('label').label(for='name') <sub>*</sub> Имя
+									+e.i._val
+										+e.input
+											+e('input')(id='name' value='' placeholder='Иванов' name='')
+								+e.row
+									+e.i._title
+										+e('label').label(for='surname') <sub>*</sub> Фамилия
+									+e.i._val
+										+e.input
+											+e('input')(id='surname' value='' placeholder='Иван' name='')
+								+e.row
+									+e.i._title
+										+e('label').label(for='phone') <sub>*</sub> Телефон
+									+e.i._val
+										+e.input
+											+e('input')(id='phone' value='' placeholder='Иванович' name='')
+
+					+b.cart-item.cart-delivery._half
+						+e.header
+							+e('h2').title Доставка
+						+e.body
+							+e.row._style-2
+								+e.radio
+									+e('input')(id='city' type='radio' name='deliv' value='val-1' checked)
+								+e.label
+									+e('label')(for='city') Доставка (Москва) 300 руб.
+
+							+e.row._style-2
+								+e.radio
+									+e('input')(id='out' type='radio' name='deliv' value='val-2')
+								+e.label
+									+e('label')(for='out') Доставка (за МКАД) 600 руб.
+
+							+e.row._style-2
+								+e.radio
+									+e('input')(id='self' type='radio' name='deliv' value='val-3')
+								+e.label
+									+e('label')(for='self') Самовывоз
+
+				+e.row
+					+b.cart-item.cart-address._half
+						+e.header
+							+e('h2').title Адрес
+						+e.body
+							+e.row
+								+e.i._title
+									+e('label').label(for='address') <sub>*</sub> Выберите адрес
+								+e.i._val
+									+e.select
+										+e('select')(id='address')
+											+e('option') ул. Вагоноремонтная, д. 21, кв. 105
+											+e('option') ул. Вагоноремонтная, д. 21, кв. 106
+											+e('option') ул. Вагоноремонтная, д. 21, кв. 107
+
+							+e.row
+								+e.i._title
+									+e('label').label(for='city') <sub>*</sub> Город
+								+e.i._val
+									+e.input
+										+e('input')(id='city' value='' placeholder='Москва' name='')
+							+e.row
+								+e.i._title
+									+e('label').label(for='address-2') <sub>*</sub> Адрес
+								+e.i._val
+									+e.input
+										+e('input')(id='address-2' value='' placeholder='ул. Вагоноремонтная, д. 21, кв. 105' name='')
+
+					+b.cart-item.cart-payment._half
+						+e.header
+							+e('h2').title Способ оплаты
+
+						+e.body
+							+e.row._style-2
+								+e.radio
+									+e('input')(id='payment-1' type='radio' name='payment' value='val-1' checked)
+								+e.label
+									+e('label')(for='payment-1') Наличными курьеру
+
+							+e.row._style-2
+								+e.radio
+									+e('input')(id='payment-2' type='radio' name='payment' value='val-2')
+								+e.label
+									+e('label')(for='payment-2') Наличными на месте
+
+							+e.row._style-2
+								+e.radio
+									+e('input')(id='payment-3' type='radio' name='payment' value='val-3')
+								+e.label
+									+e('label')(for='payment-3') Оплата картой
+
+				+e.row
+					+b.cart-item.cart-comment._half
+						+e.textarea
+							+e('textarea')(name='' placeholder='Комментарий к заказу')
+
+				+e.row
+					+b('a').button._checkout(href='#') Оформить заказ
+

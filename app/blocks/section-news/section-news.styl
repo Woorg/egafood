@@ -1,0 +1,48 @@
+.section
+	&_news
+		padding-top 43px
+		padding-bottom 67px
+		// overflow hidden
+		.section__in
+			position relative
+		&__articles
+			clearfix()
+.articles
+	font-size 0
+
+
+.section__news-icon-left
+	position absolute
+	top 130px
+	left -354px
+	content " "
+	width 200px
+	height 183px
+	opacity 0
+	transition opacity .3s ease
+	+hd()
+		opacity 1
+		background url('../images/news_icon_left.png') 0 0 no-repeat
+		background-size contain
+		z-index -1
+		+retina()
+			background url('../images/news_icon_left_2x.png') 0 0 no-repeat
+			background-size contain
+
+.section__news-icon-right
+	position absolute
+	top 128px
+	right -348px
+	content ""
+	width 200px
+	height 183px
+	opacity 0
+	transition opacity .3s ease
+	+hd()
+		opacity 1
+		background url('../images/news_icon_right.png') 0 0 no-repeat
+		background-size contain
+		z-index -1
+		+retina()
+			background url('../images/news_icon_right_2x.png') 0 0 no-repeat
+			background-size contain

@@ -1,0 +1,13 @@
+mixin breadcrumbs-category-main()
+	+b.breadcrumbs._category-main
+		+e.in
+			+e('ul').list(vocab='http://schema.org/', typeof='BreadcrumbList')
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link(property='item', typeof='WebPage', href='https://example.com/Главная')
+						span(property='name') Главная
+					meta(property='position', content='1')
+				| /
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link._active(property='item', typeof='WebPage', href='https://example.com/Главная/Мясо')
+						span(property='name') Мясо
+					meta(property='position', content='2')

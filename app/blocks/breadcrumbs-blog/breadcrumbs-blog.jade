@@ -1,0 +1,18 @@
+mixin breadcrumbs-blog()
+	+b.breadcrumbs._blog
+		+e.in
+			+e('ul').list(vocab='http://schema.org/', typeof='BreadcrumbList')
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link(property='item', typeof='WebPage', href='https://example.com/Главная')
+						span(property='name') Главная
+					meta(property='position', content='1')
+				| /
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link(property='item', typeof='WebPage', href='https://example.com/Главная/Блог')
+						span(property='name') Блог
+					meta(property='position', content='2')
+				| /
+				+e('li').item(property='itemListElement', typeof='ListItem')
+					+e('a').link._active(property='item', typeof='WebPage', href='https://example.com/Главная/Блог/Новости')
+						span(property='name') Новости
+					meta(property='position', content='3')

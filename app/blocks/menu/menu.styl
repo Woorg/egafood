@@ -1,0 +1,103 @@
+.menu
+	display inline-block
+	vertical-align top
+	&__list
+		font-size 0
+	&__item
+		display inline-block
+		cursor pointer
+		text-decoration none
+		&:first-child
+			.menu__link
+				margin-left 0
+	&__link
+		margin-left 6px
+		display inline-block
+		width 140px
+		vertical-align top
+	&__item-w
+		display inline-block
+	&__icon
+		position relative
+		margin 0 auto 20px
+		padding 2px
+		display block
+		size 100px
+		background-color $white
+		overflow hidden
+		// border 3px solid $white
+		box-shadow 0.09375rem 0.1625rem 4px rgba(0, 0, 0, .2)
+		border-radius 50%
+		transition all .2s ease
+		&:after
+			position absolute
+			top 3px
+			left 3px
+			content ""
+			display block
+			width 92px
+			height 92px
+			border 1px solid #603813
+			border-radius 50%
+			transition all .2s ease
+		&_1
+			&:after
+				background url('../images/menu/menu_item_1.jpg') 0 0 no-repeat
+				background-size cover
+				+retina()
+					background url('../images/menu/menu_item_1_2x.jpg') 0 0 no-repeat
+					background-size cover
+		&_2
+			&:after
+				background url('../images/menu/menu_item_2.jpg') 0 0 no-repeat
+				+retina()
+					background url('../images/menu/menu_item_2_2x.jpg') 0 0 no-repeat
+					background-size cover
+
+		&_3
+			margin-left 2px
+			&:after
+				background url('../images/menu/menu_item_3.jpg') 0 0 no-repeat
+				+retina()
+					background url('../images/menu/menu_item_3_2x.jpg') 0 0 no-repeat
+					background-size cover
+		&_4
+			margin-left 4px
+			&:after
+				background url('../images/menu/menu_item_4.jpg') 0 0 no-repeat
+				+retina()
+					background url('../images/menu/menu_item_4_2x.jpg') 0 0 no-repeat
+					background-size cover
+		&_5
+			&:after
+				background url('../images/menu/menu_item_5.jpg') 0 0 no-repeat
+				+retina()
+					background url('../images/menu/menu_item_5_2x.jpg') 0 0 no-repeat
+					background-size cover
+		&_6
+			margin-left 3px
+			&:after
+				background url('../images/menu/menu_item_6.jpg') 0 0 no-repeat
+				+retina()
+					background url('../images/menu/menu_item_6_2x.jpg') 0 0 no-repeat
+					background-size cover
+	&__text
+		border-bottom 1px solid transparent
+		padding-bottom 2px
+		display inline-block
+		font-iskralght(24px,1)
+		color $white
+		text-transform uppercase
+		transition all .2s ease
+	&__link
+		&:hover
+			.menu__icon
+				// border 0px solid $white
+				box-shadow 0rem 0rem 0px rgba(0, 0, 0, .2)
+				&:after
+					// border 1px solid transparent
+					transform scale(1.07)
+			.menu__text
+				border-bottom 1px solid $white
+
+
